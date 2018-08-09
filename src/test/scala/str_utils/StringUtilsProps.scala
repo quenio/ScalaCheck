@@ -5,7 +5,7 @@ import org.scalacheck.{Prop, Properties}
 import org.scalacheck.Gen.{listOf, alphaStr, numChar}
 import Prop.AnyOperators
 
-object StringUtilsSpec extends Properties("StringUtils")
+object StringUtilsProps extends Properties("StringUtils")
 {
   property("truncate") = forAll { (s: String, n: Int) =>
     lazy val t = StringUtils.truncate(s, n)

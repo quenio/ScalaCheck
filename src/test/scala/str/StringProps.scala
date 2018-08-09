@@ -3,7 +3,7 @@ package str
 import org.scalacheck.Prop.forAll
 import org.scalacheck.Properties
 
-object StringSpec extends Properties("String") {
+object StringProps extends Properties("String") {
 
   property("startsWith") = forAll { (a: String, b: String) =>
     (a+b).startsWith(a)
